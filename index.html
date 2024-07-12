@@ -162,7 +162,7 @@
                 <h3 class="cars-left-text">PAIN PROTECTION</h3>
                 <div class="cars-row">
                     <div class="cars-content">
-                        <h3>PAIN PROTECTION (PPF)</h3>
+                        <h3 class="cars-title">PAIN PROTECTION (PPF)</h3>
                         <ul class="cars-list">
                             <li>HIGH IMPACT PACKAGE (Popular add-on): Headlights, foglights, mirrors, rear bumper ledge
                                 $200</li>
@@ -341,7 +341,7 @@
                         </div>
                     </div>
                     <div class="quote-column col-6">
-                        <img src="./img/map.png" alt="map">
+                        <img class="map-1" src="./img/map.png" alt="map">
                     </div>
                 </div>
             </div>
@@ -349,7 +349,7 @@
 
         <section class="get">
             <div class="container">
-                <div class="ger-row">
+                <div class="get-row">
                     <h2 class="get-text">Get a Free quote</h2>
                     <div class="get-content">
                         <p>If you're ready to give your car a new look and feel with professional window tinting,
@@ -409,6 +409,32 @@
             slidesPerView: 5,
             spaceBetween: 25,
             loop: true,
+
+            breakpoints: {
+                // when window width is >= 320px 
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 480px 
+                450: {
+                    slidesPerView: 2,
+                    spaceBetween: 15
+                },
+                // when window width is >= 640px 
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+                1023: {
+                    slidesPerView: 5,
+                    spaceBetween: 25
+                }
+            },
 
             // Navigation arrows 
             navigation: {
